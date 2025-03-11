@@ -25,7 +25,7 @@
     height: 50px;
     width: auto;
     background-color: transparent;
-    color: #00ccff; /* Light Blue */
+    color: #d15913; /* Light Blue */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-shadow: 0 0 10px #00ccff; /* Glowing effect */
-    /* border:2px solid green; */
+    /* border:2px solid green #00ccff;; */
 }
 .home-box3 {
     height: 50px;
