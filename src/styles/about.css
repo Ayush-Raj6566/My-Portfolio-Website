@@ -1,0 +1,151 @@
+/* About Page Styling */
+.about-container {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+/* Header (Navbar) */
+.about-header {
+    height: 80px;
+    width: 100%;
+    background-color: rgba(10, 10, 30, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+  flex-wrap: wrap;
+  gap:650px;
+  /* position: fixed; */
+}
+
+/* Logo */
+.about-box1 {
+    height: 50px;
+    width: auto;
+    background-color: transparent;
+    color: #00ccff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ccff;
+}
+
+/* Navigation */
+.about-box3 {
+    height: 50px;
+    width: auto;
+    background-color: transparent;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* border:2px solid green; */
+}
+
+.about-box3 ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-box3 ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.about-box3 ul li a:hover {
+    color: #00ccff;
+    text-shadow: 0 0 10px #00ccff;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    position: fixed; /* Fixed at a specific position */
+    top: 20px;       /* Distance from the top */
+    right: 20px;     /* Distance from the right */
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
+}
+.nav-menu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .about-box3 {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background-color: rgba(10, 10, 30, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    .about-box3.active {
+        height: 200px; /* Show menu when active */
+    }
+
+    .about-box3 ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Hero Section */
+.about-hero {
+    min-height: 80vh;
+    padding: 50px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-hero p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.about-footer {
+    height: 100px;
+    background-color: rgba(10, 10, 30, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

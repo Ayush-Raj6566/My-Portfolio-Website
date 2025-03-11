@@ -1,0 +1,158 @@
+.skills-container{
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+/* Header (Navbar) */
+.skills-header {
+  height: 80px;
+  width: 100%;
+  background-color: rgba(10, 10, 30, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  flex-wrap: wrap;
+  gap:650px;
+  /* position: fixed; */
+}
+
+.skills-box1{
+  height: 50px;
+    width: auto;
+    background-color: transparent;
+    color: #00ccff; /* Light Blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ccff;
+}
+
+.skills-box3{
+  height: 50px;
+  width: auto;
+  background-color: transparent;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.skills-box3 ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-box3 ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.skills-box3 ul li a:hover {
+  color: #00ccff;
+  text-shadow: 0 0 10px #00ccff;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  position: absolute; /* Fixed at a specific position */
+  top: 20px;       /* Distance from the top */
+  right: 20px;     /* Distance from the right */
+  z-index: 1000;
+  cursor: pointer;
+  display: none;
+}
+.nav-menu {
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-menu.active {
+  display: block;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .skills-box3 {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      background-color: rgba(10, 10, 30, 0.9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease;
+  }
+
+  .skills-box3.active {
+      height: 200px; /* Show menu when active */
+  }
+
+  .skills-box3 ul {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .hamburger {
+      display: block;
+  }
+}
+
+
+.skills-hero {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  background-color: transparent;
+  /* border:2px solid red; */
+}
+
+.lang{
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.7); 
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media(max-width:768px){
+  .skills-hero{
+      flex-direction: column;
+  }
+}
+
+
+/* Footer */
+.skills-footer {
+  height: 100px;
+  background-color: rgba(10, 10, 30, 0.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
