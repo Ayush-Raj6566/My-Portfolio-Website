@@ -69,7 +69,7 @@
 
 /* Hamburger Icon */
 .hamburger {
-    position: fixed; /* Fixed at a specific position */
+    position: absolute; /* Fixed at a specific position */
     top: 20px;       /* Distance from the top */
     right: 20px;     /* Distance from the right */
     z-index: 1000;
@@ -106,7 +106,15 @@
         overflow: hidden;
         transition: height 0.3s ease;
     }
-
+    .home-header{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap:50px;
+    }
+    .home-hr1{
+        font-size: 1.25rem;
+    }
     .home-box3.active {
         height: 200px; /* Show menu when active */
     }
@@ -198,4 +206,37 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .home-hr1 h3 {
+        font-size: 4vw;
+    }
+
+    .home-hr1 h4 {
+        font-size: 3vw;
+    }
+    .typed-text span {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-hr1 h3 {
+        font-size: 5vw;
+    }
+
+    .home-hr1 h4 {
+        font-size: 4vw;
+    }
+      .typed-text span {
+        font-size: 6vw;
+      }
+}
+.typed-text {
+    font-size: clamp(16px, 2vw, 28px); /* Responsive font size */
+    height: 40px; /* Fixed height to avoid pushing */
+    overflow: hidden; /* Prevent wrapping */
+    white-space: nowrap; /* Keep text in a single line */
+    /* text-overflow: ellipsis; Show "..." if text overflows */
 }
