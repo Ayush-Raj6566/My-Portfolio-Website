@@ -208,7 +208,7 @@
     font-size: 1.2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .home-hr1 h3 {
         font-size: 4vw;
     }
