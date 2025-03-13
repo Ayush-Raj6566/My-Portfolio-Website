@@ -194,6 +194,16 @@
     width: 50%;
         margin-bottom: 0;
     }
+    .home-hr2 .i{
+        height: 100%;
+        width: 50%;
+        border-radius: 50%;
+        box-shadow: 0 0 15px #00ccff, 
+        0 0 30px #00ccff, 
+        0 0 45px #00ccff, 
+        0 0 60px #00ccff;
+        /* border:2px solid red; */
+    }
 }
 
 /* Footer */
@@ -218,6 +228,9 @@
     }
     .typed-text span {
         font-size: 7vw;
+    }
+    .home-box1{
+        font-size: 6vw;
     }
 }
 
